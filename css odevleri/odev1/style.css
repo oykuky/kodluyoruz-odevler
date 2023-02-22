@@ -5,6 +5,10 @@
     color: rgb(218, 16, 104);
  }
 
+ header h1{
+   text-align: center;
+ }
+
  .nav h4 {
     font-size:15px;
     color: rgb(10, 11, 12);
@@ -41,8 +45,8 @@ h2 {
 }
 
 .boots h5 {
-    color: rgb(173, 11, 11);
-    font-size: medium;
+    color: rgb(233, 72, 139);
+    font-size: larger;
 }
 
 .boots img {
@@ -51,7 +55,24 @@ h2 {
    
 
 /* PUMPS STARTED */
+.pumps img {
+   margin-top: 2%;
+}
+
+.pumps h5 {
+   color: rgb(233, 72, 139);
+   font-size: larger;
+}
 
 
 
 /* SNEAKER STARTED */
+.sneaker img {
+   margin-top: 2%;
+}
+
+.sneaker h5 {
+   color: rgb(233, 72, 139);
+   font-size: larger;
+}
+

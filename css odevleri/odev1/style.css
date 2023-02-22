@@ -1,0 +1,37 @@
+
+ header {
+    font-size:18px;
+    color: rgb(218, 16, 104);
+ }
+
+ .nav h4 {
+    font-size:15px;
+    color: rgb(10, 11, 12);
+    text-align:left;
+ }
+
+ .nav h2 {
+    text-align: center;
+ }
+
+ .nav ul li {
+    color: rgb(187, 20, 48);
+ }
+
+ 
+.foot {
+    text-align:left;
+    padding: 24px;
+    color: white;
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 23px;
+    color: rgb(22, 17, 17);
+}
+
+
+
+   
+

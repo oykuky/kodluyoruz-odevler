@@ -4,7 +4,7 @@
 
 [Patika.dev](https://app.patika.dev/paths)
 ##### Pages
-![Menu](menu.png)
+![](menu.png)
 
 ![Boots](boot.png)
 

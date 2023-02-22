@@ -4,12 +4,13 @@
 
 [Patika.dev](https://app.patika.dev/paths)
 ##### Pages
-![](menu.png)
 
-![Boots](boot.png)
+![menu](https://github.com/oykuky/kodluyoruz-odevler/blob/main/css%20odevleri/odev1/img/menu.png)
 
-![Pumps](pumps.png)
+![boot.png](boot.png)
 
-![Sneakers](sne.png)
+![pumps.png](pumps.png)
+
+![sne.png](sne.png)
 
 

@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-/* Arama motoru özellikler */
+/* Arama motoru --panel özellikler */
 .panel{
     background-color:#eee9e9;
     text-align: center;
@@ -33,12 +33,13 @@
 /* ilk link kutusu için özellikler */
 .first-box {
     text-align: center;
-    background-color: rgba(39, 232, 232, 0.807);
+    background-color: #7EE5DA;
     width:60%;
     margin: 0px 2px;
     
 }
 
+/* Link renkleri için class  */
 .link-purple {
     color: rgb(96, 6, 119);
 }
@@ -50,7 +51,7 @@
 
 .second-box {
     text-align: center;
-    background-color: rgba(12, 176, 176, 0.631);
+    background-color: #70CCC2;
     width:60%;
     margin: 0px 2px;
     
@@ -58,7 +59,7 @@
 
 .third-box {
     text-align: center;
-    background-color: rgba(12, 176, 176, 0.934);
+    background-color: #62B3AA;
     width:60%;
     margin: 0px 2px;
     

@@ -2,3 +2,37 @@
 .center {
     text-align: center;
 }
+
+.panel{
+    background-color:#eee9e9;
+    text-align: center;
+    margin-left:45px ;
+    margin-right:45px ;
+    width:auto;
+    
+}
+
+.panel button{
+    background-color: #eee9e9;
+    font-size: 13,5px;
+    border-color: #5c5a5a;
+}
+
+.all-box {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ilk link kutusu için özellikler */
+.first-box {
+    text-align: center;
+    background-color: rgb(116, 248, 248);
+    width:50%;
+    margin: 1em;
+    
+}
+
+.link-purple {
+    color: rgb(96, 6, 119);
+}

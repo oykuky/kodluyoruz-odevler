@@ -3,12 +3,15 @@
     text-align: center;
 }
 
+/* Arama motoru özellikler */
 .panel{
     background-color:#eee9e9;
     text-align: center;
     margin-left:45px ;
     margin-right:45px ;
     width:auto;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
@@ -22,17 +25,46 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
+    margin-left:45px ;
+    margin-right:45px ;
+    font-size: 15px;
 }
 
 /* ilk link kutusu için özellikler */
 .first-box {
     text-align: center;
-    background-color: rgb(116, 248, 248);
-    width:50%;
-    margin: 1em;
+    background-color: rgba(39, 232, 232, 0.807);
+    width:60%;
+    margin: 0px 2px;
     
 }
 
 .link-purple {
     color: rgb(96, 6, 119);
+}
+
+.link-blue {
+    color: #0000EE;
+}
+
+
+.second-box {
+    text-align: center;
+    background-color: rgba(12, 176, 176, 0.631);
+    width:60%;
+    margin: 0px 2px;
+    
+}
+
+.third-box {
+    text-align: center;
+    background-color: rgba(12, 176, 176, 0.934);
+    width:60%;
+    margin: 0px 2px;
+    
+}
+
+.copyrights{
+    font-size: smaller;
+    text-align: center;
 }

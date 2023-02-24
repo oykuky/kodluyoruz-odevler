@@ -53,52 +53,54 @@
     </div>
         
     
-      <!-- Search engine panel-->
+      <!-- Search engine panel -->
         <div class="search-panel">
-            <div class="search">
-                    <div class="searchImg">
-                    <span>
-                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path 
-                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                </path> <!--path: dosya yolu -->
-                            </svg> <!-- svg(ölçeklenebilir vektör grafikleri): iki boyutlu grafikleri tanımlar. -->
-                        </span>
-                    </div>
 
-                <div class="input-enter">  
+            <div class="search">
+
+                <!-- arama iconu ekleme -->
+                <!-- svg bir vektör dosyası olduğundan, çözünürlüğünü kaybetmeden büyütülebilir -->
+                <div class="searchIcon">  
+                    <!-- icona css uygulayabilmek için span içine aldık -->
+                    <span> 
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path 
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                            </path> 
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- textbox ekleme -->
+                <div class="input">  
                     <div class="input-area">
-                    <input type="text" class="input" maxlength="2048" autofocus="true">
+                    <input type="text" class="input" maxlength="2048" role="combobox" title="search">
                     </div>
                 </div>  
 
             </div>
-
-               <div class="voice-con">
-                   <img class="voice" src="/css odevleri/odev3/assets/voicelogo.png" alt="">
+                <!-- ses iconu ekleme -->
+               <div class="voice-icon">
+                   <button style="cursor:pointer" title="Search by voice" >
+                    <img class="voice" src="/css odevleri/odev3/assets/voicelogo.png" alt="" width="25px">
+                   </button>
                </div>
 
         </div>
 
 
-
-                <!-- </div>
-                <input type="text" class="input" role="combobox">
+        <!-- Butonlar -->
+        <div class="buttons">
+            <button class="btn1" type="button">Google Search</button>
+            <button class="btn2" type="button">I'm feeling lucky</button>
+        </div>
               
-                </div> -->
-            
-            
-      <!-- Butonlar -->
-      <div class="buttons">
-        
-        <button type="button">Google Search</button>
-        <button type="button">I'm feeling lucky</button>
-    
-      </div>
+          
+</section>
 
 
-    </section>
-        
+        <!------------------ Footer start --------------------->
+        <!------------------ Footer finish --------------------->
     
  
   

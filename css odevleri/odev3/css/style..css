@@ -1,0 +1,121 @@
+/* Tüm sayfa için font renk özellikleri */
+body{
+    background: #fff;
+    color: #222; 
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+
+/************ header start *************/
+/* ul inkler */
+.head {
+    padding-left: 0; /* yazılar sola getirilir */
+    overflow:visible;
+    margin: 11px;
+    margin-top: -27px; /*yazılar daha yukarı taşındı*/
+    
+}
+
+/* üst soldaki linkler */
+.head-leftli{
+    margin-right: 16px; /* linkler arasında boşluk bırakır */
+    display: flex;
+    float: left; /* linkler yan yana sola soğru dizilir */
+    
+}
+
+.head-leftli a {
+ color: #000000; /*link rengi değişir*/
+ padding-left: 15px;
+ font-size: 13px;
+ opacity: 0.75; /* opaklığı ayarlıyor ,rengini açtık */
+ text-decoration: none;
+ 
+ 
+}
+/* profil fotoğrafı */
+.pic { 
+    display: flex;
+    float: right;
+    text-align: center;
+    margin-right: 12px;
+    margin-top: -6px;
+}
+
+
+
+
+/* svg  */
+.head-rightliSvg{
+    margin-right: 15px; /* linkler arasında boşluk bırakır */
+    display: flex;
+    float:right; /* linkler yan yana sağa soğru dizilir */
+    opacity: 0.55;
+    padding: 0px 1px;
+    margin-top: -2px;
+}
+
+/* üst sağdaki linkler */
+.head-rightli{
+    margin-right: 12px; /* linkler arasında boşluk bırakır */
+    display: flex;
+    float:right; /* linkler yan yana sağa soğru dizilir */
+    
+}
+
+.head-rightli a {
+ color: #000000; /*link rengi değişir*/
+ padding-left: 15px;
+ font-size: 13px;
+ opacity: 0.75; /* opaklığı ayarlıyor ,rengini açtık */
+ text-decoration: none;  /* metin dekorasyonu temizlenir */
+}
+
+/************ header start *************/
+
+
+
+
+
+/* google logo div */
+.g-logo {
+    text-align: center;
+    margin: 47px 0px 0px;
+    height: 233px;
+    margin-top: 89px;
+}
+/* google logo resmi*/
+.g-logo img{
+    padding: 109px 0px 0px;
+    width: 272px;
+}
+
+/* Arama motoru --panel özellikler şeffaf bölüm */
+.search-panel{
+   
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #dfe1e5;
+    box-shadow: none;
+    margin: 0 auto;
+    height: 46px;
+    margin: 0 auto; 
+    margin-top: 7px; 
+    width: 484px;
+    border-radius: 50px;
+}
+
+
+
+
+.buttons{
+    text-align: center;
+    font-size: 13,5px;
+    border-color: #5c5a5a;
+    margin-top: 85px;
+}
+
+
+
+

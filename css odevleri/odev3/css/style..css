@@ -37,7 +37,6 @@ body{
 }
 
 
-
 .head-leftli a {
  color: #000000; /*link rengi değişir*/
  padding-left: 15px;
@@ -89,13 +88,7 @@ body{
  opacity: 0.75; /* opaklığı ayarlıyor ,rengini açtık */
  text-decoration: none;  /* metin dekorasyonu temizlenir */
 }
-
-
-
 /************ header finish *************/
-
-
-
 
 
 /* google logo div */
@@ -241,8 +234,7 @@ body{
 }
 
 
-/******** footer bölümü **********/
-
+/**********************footer bölümü *******************/
 .footer {
     margin: 0;
     padding: 0;
@@ -278,4 +270,4 @@ body{
   .footerli a:hover {
     text-decoration: underline;
   }
-  /***********Footer *********/
+  /*********************Footer *********************/

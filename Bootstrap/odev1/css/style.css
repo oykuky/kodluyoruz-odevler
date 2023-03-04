@@ -1,3 +1,49 @@
 .bgc{
-    background-color:#E9ECEF ;
+    background-color:#E9ECEF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
+
+
+/* About us title */
+h3,h5{
+    color: blueviolet;
+}
+
+/* Card backgorund color */
+#Cbgclr{
+    background-color:#E9ECEF;
+}
+
+
+
+    /* Card Styles */
+    .card{
+        width: 15rem;
+        height: 24em;
+        background-color: rgb(239, 231, 231);
+        margin-bottom: 19px;
+    }
+
+    .card img {
+        height:14em;
+        max-width: 24em;
+        border-radius: 8px 8px 0px 0;
+        padding: 10px 10px 0px 10px ;
+        border-radius: 50%;
+    }
+
+    .card-heading {
+        font-size: 18px;
+        font-weight: bold;
+        background: #fff;
+        padding: 10px 15px;
+    }
+
+    .card-text {
+        padding: 2px 15px;
+        background:  rgb(199, 189, 190);;
+        font-size: 14px;
+        color: #636262;
+    }
+

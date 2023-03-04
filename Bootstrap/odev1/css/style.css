@@ -16,16 +16,15 @@ h3,h5{
 }
 
 
-
-    /* Card Styles */
-    .card{
+    /* Products Card Styles */
+    .container .card{
         width: 15rem;
         height: 24em;
         background-color: rgb(239, 231, 231);
         margin-bottom: 19px;
     }
 
-    .card img {
+    .container .card img {
         height:14em;
         max-width: 24em;
         border-radius: 8px 8px 0px 0;
@@ -33,17 +32,47 @@ h3,h5{
         border-radius: 50%;
     }
 
-    .card-heading {
+    /* resimler için efektler Zoom-in */
+    .container img:hover{
+        box-shadow: 0px 0px 2px 3px  rgb(230, 245, 30)  ;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    
+    .container .card-heading {
         font-size: 18px;
         font-weight: bold;
         background: #fff;
         padding: 10px 15px;
     }
 
-    .card-text {
+    .container .card-text {
         padding: 2px 15px;
         background:  rgb(199, 189, 190);;
         font-size: 14px;
-        color: #636262;
+        color: #6c4a68;
     }
 
+   .container .card:hover{
+    box-shadow: 0px 0px 3px 2px  rgb(123, 15, 142);
+    transition-duration: 1ms;
+    transition-delay: 2ms;
+    transform-style: flat;
+    transform:rotateY('angle');
+   }
+
+   .container .card-text:hover{
+    box-shadow: 0px 0px 3px 2px  rgb(116, 68, 124);
+    background-color: #e10cc8;
+    color: #fff;
+    border-style:groove;
+    border-color: rgb(237, 93, 194);
+    font-size: 17px;
+   }
+
+
+
+   

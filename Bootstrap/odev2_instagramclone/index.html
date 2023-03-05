@@ -23,7 +23,7 @@
   </head>
   <body class="pb-5" >
     <!--nav baslangıç-->
-    <nav class="navbar navbar-expand-sm navbar-light border fixed-top bg-white mb-5" style="height:54px;"> 
+    <nav class="navbar navbar-expand-sm navbar-light border fixed-top bg-white mb-5 " style="height:54px;"> 
       <div class="logo" style="margin-left:192px;">
             <a class="navbar-brand" href="#"><img
                 src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
@@ -85,12 +85,12 @@
       </div><!--menu-->
     </nav> <!--nav bitis-->
    
-    <!-- İcerik alanı -->
-    <div class="container middlearea mt-5 offset-4">
-      <div class="row pt-5">
-        <div class="col-6">
-          <div class="card">         <!--?????-->
-            <div class="card-body d-sm-inline-flex ">
+    <!----------------------middlearea start ------------------------> 
+    <div class="container middlearea mt-5">
+      <div class="row pt-5 bg-success">
+        <div class="col-md-6 col-sm-12">
+          <div class="card mb-4 bg-info">  <!-- story alanı start -->       
+            <div class="card-body d-inline-flex "> 
               <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
               <img
                 src="/Bootstrap/odev2_instagramclone/assets/kodluyoruz.jpg"
@@ -124,7 +124,7 @@
                 src="/Bootstrap/odev2_instagramclone/assets/abel.jpg"
                 class="storyphoto img-fluid"
               />
-            <span class="storytext mr-2">theweeknd
+            <span class="storytext">theweeknd
             </span>
             </a>
               <a href="https://www.instagram.com/mango/" style="text-decoration: none;" target="_blank">
@@ -137,32 +137,34 @@
               <a href="https://www.instagram.com/honeymoon/" style="text-decoration: none;" target="_blank">
               <img
                 src="/Bootstrap/odev2_instagramclone/assets/lana.jpg"
-                class="storyphoto img-fluid"
+                class="storyphoto img-fluid "
               />
                 <span class="storytext">honeymoon</span>
             </a>
             </div>
-          </div>
-
-          <div class="card">
+          </div> <!-- story alanı finish -->
+          
+          <!------------------------ Post alanı start ------------------------->
+          <!----------- 1.post start ------------>
+          <div class="card mb-4" >
             <div class="card-header">
               <img
-                src="https://scontent-otp1-1.cdninstagram.com/v/t51.2885-19/s150x150/83792429_185184289374945_1047727451901263872_n.jpg?_nc_ht=scontent-otp1-1.cdninstagram.com&_nc_ohc=oor-Z1FIzvgAX-uXuhs&tp=1&oh=e92baf321c3e2e5ebf9416204da05c82&oe=602E0320"
+                src="https://picsum.photos/id/453/200/300"
                 class="mr-2"
                 style="width: 35px; height: 35px; border-radius: 50%"
               />
-              <span class="postuserfont"><strong><a href="https://www.instagram.com/cengizcmataraci" target="_blank" style="color: black;">cengizcmataraci</a></strong></span>
+              <span class="postuserfont"><strong><a href="#" target="_blank" style="color: black;">BlackLover</a></strong></span>
               <span class="mt-2"
-                ><strong><i class="fas fa-ellipsis-h"></i></strong
+                ><strong class="float-right"><i class="fas fa-ellipsis-h"></i></strong
               ></span>
             </div>
             <img
-              src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg"
+              src="https://picsum.photos/id/553/200/110"
               class="card-img-top"
               alt="..."
             />
             <ul
-              class="list-group list-group-horizontal mt-1"
+              class="list-group list-group-horizontal mt-1 border-0"
               style="list-style-type: none;"
             >
               <li class="nav-item">
@@ -186,6 +188,7 @@
                   ></i
                 ></a>
               </li>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"
                   ><i
@@ -199,7 +202,8 @@
                   ></i
                 ></a>
               </li>
-              <span class="">
+
+              <span class="offset-7">
                 <li class="nav-item ml-4">
                   <a class="nav-link ml-2" href="#"
                     ><i
@@ -212,20 +216,20 @@
             </ul>
             <span>
               <img
-                src="https://scontent-otp1-1.cdninstagram.com/v/t51.2885-19/s150x150/72779108_713693839133901_6123578952603664384_n.jpg?_nc_ht=scontent-otp1-1.cdninstagram.com&_nc_ohc=XqPxbR5poVwAX-ZBLnj&tp=1&oh=8ced290d281ab30c73ecab574c569f2e&oe=602E8762"
+                src="https://picsum.photos/id/74/200/110"
                 class="mb-1 ml-3"
                 style="width: 23px; height: 23px; border-radius: 50%"
               />
               <span class="postuserfont"
-                ><strong>furkantolgayuce</strong> ve
-                <strong>42 diğer kişi</strong> beğendi</span
+                ><strong>deryaKalay</strong> ve
+                <strong>58 diğer kişi</strong> beğendi</span
               >
             </span>
             <div class="card-body" style="margin-top: -15px">
               <p class="card-text postuserfont">
                 <strong style="margin-left: -4px; margin-right: 5px"
-                  >cengizcmataraci</strong
-                >Burası Rize! Harika bir cennet!
+                  >BlackLover</strong
+                >Bir sonbahar günü!
               </p>
               <a href="#" style="text-decoration: none"
                 ><p
@@ -236,18 +240,18 @@
                     color: rgb(139, 133, 133);
                   "
                 >
-                  15 yorumun tümünü gör
+                  26 yorumun tümünü gör
                 </p></a
               >
               <p class="card-text postuserfont">
                 <strong style="margin-left: -4px; margin-right: 5px"
-                  >furkantolgayuce</strong
-                >Abi çok güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                  >Sema.akyol</strong
+                >Çok güzelmiş yaa:)
               </p>
               <p class="card-text postuserfont" style="margin-top: -15px">
                 <strong style="margin-left: -4px; margin-right: 5px"
-                  >elonrmuskk</strong
-                >That's wonderful view bro! I always want to travel Rize...
+                  >Tanya</strong
+                >That's wonderful view!
               </p>
               <p
                 class="card-text"
@@ -261,8 +265,7 @@
                 10 SAAT ÖNCE
               </p>
             </div>
-            <div
-              class="card-footer"
+            <div class="card-footer"
               style="
                 color: rgb(139, 133, 133);
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -273,11 +276,13 @@
             >
               <span style="margin-left: -4px">Yorum Ekle...</span
               ><span class="" style="color: #0095f6; opacity: 50%"
-                ><strong>Paylaş</strong></span
+                ><strong class="float-right">Paylaş</strong></span
               >
             </div>
           </div>
-          <div class="card">
+
+          <!----------- 2.post start ------------>
+          <div class="card mb-4">
             <div class="card-header">
               <img
                 src="https://scontent-otp1-1.cdninstagram.com/v/t51.2885-19/s150x150/105971749_581051382486071_1053777149100084988_n.jpg?_nc_ht=scontent-otp1-1.cdninstagram.com&_nc_ohc=VMAJoeqh5IwAX_QH3Nt&tp=1&oh=3bd9dbd2532c87e350dfcfffec74f120&oe=602BAC27"
@@ -410,6 +415,8 @@
               >
             </div>
           </div>
+
+          <!---------------- 3.post start ---------------->
           <div class="card mb-3">
             <div class="card-header">
               <img
@@ -544,9 +551,10 @@
             </div>
           </div>
         </div>
+        <!----------------------middlearea finish ---------------------->
 
-        <!-- sag panel start -->
-        <div class="col-6" >
+        <!----------------------sag panel start ---------------------->
+        <div class="col-3 ml-3" >
           <div
             class="card col-xs-12 rightpanel"
             id="sticky-sidebar"
@@ -574,7 +582,7 @@
                       color: black;
                       margin-left: 20px;
                     "
-                    ><strong>Black lover</strong>
+                    ><strong>BlackLover</strong>
                     </span>
                   </span>
                 </a>

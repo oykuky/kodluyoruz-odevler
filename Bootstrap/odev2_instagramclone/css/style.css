@@ -4,6 +4,10 @@
   color: gray;
   background-position: 40%;
   background-size: 6%;
+  background-image:url(/Bootstrap/odev2_instagramclone/assets/search-solid.svg);
+  background-repeat: no-repeat; /*tekrarlamaması için*/
+  padding-left: 12px; /*search ikonu ile ara yazısı arasında bosluk verme*/
+  
 }
 
 input.empty {

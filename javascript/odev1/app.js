@@ -1,6 +1,6 @@
-// const x=prompt("İsminizi giriniz");
+const x=prompt("İsminizi giriniz").toUpperCase();
 
-// document.getElementById("myName").innerHTML=`${x}`;
+document.getElementById("myName").innerHTML=`${x}`;
 
 function showTime() {
     let date = new Date();

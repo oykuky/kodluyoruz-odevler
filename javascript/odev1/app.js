@@ -1,8 +1,6 @@
-const x=prompt("İsminizi giriniz");
+// const x=prompt("İsminizi giriniz");
 
-document.getElementById("myName").innerHTML=`${x}`;
-
-
+// document.getElementById("myName").innerHTML=`${x}`;
 
 function showTime() {
     let date = new Date();
@@ -12,7 +10,7 @@ function showTime() {
     document.getElementById("myClock").innerHTML = `${currentTime} ${day}`;
   }
   
-  setInterval(showTime, 1000); // Her saniyede showTime işlevini çağırır
+  setInterval(showTime, 1000); // Her saniyede showTime işlevini çağırır (1000 milisaniye cinsinden)
   
 
 

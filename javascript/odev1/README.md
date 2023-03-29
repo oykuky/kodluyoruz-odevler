@@ -2,4 +2,4 @@
 
 ##### :point_down:Preview
 
-![prv](/odev1/assets/ss.png)
+![prv](javascript/odev1/assets/ss.png)

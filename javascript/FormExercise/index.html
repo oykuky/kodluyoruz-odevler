@@ -11,17 +11,21 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="alert"></div>
+    <h1 class="text-center">Some Js Exercise</h1>
+    <div class="container mt-3">
         <div class="row">
-            <div class="col-12">
-                <div id="alert"></div>
-            </div>
-            <div class="col-sm-8 offset-2 mt-5 ">
+            <div class="col-sm-4 offset-sm-4 mt-5">
                 <form id="userForm">
-                    <label for="user" class="form-label">Username</label> <!--for input id si ile aynı olmalıdır  -->
-                    <input type="text" name="username" id="user" class="form-control">
-                    <label for="score" class="form-label">Grade</label>
-                    <input type="number" name="score" id="score" class="form-control">
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Username</label>
+                        <!--for input id si ile aynı olmalıdır  -->
+                        <input type="text" name="username" id="user" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="score" class="form-label">Grade</label>
+                        <input type="number" name="score" id="score" class="form-control">
+                    </div>
 
                     <div class="mb-3 mt-4  text-center">
                         <input type="submit" value="Submit" class="btn btn-success">
@@ -43,11 +47,11 @@
 
         // alert fonksiyonu parametreler ile oluşturuldu
         const alertFunction = (title, message, className = "warning") => `
-            <div class="alert alert-${className} alert-dismissible fade show" role="alert">
-            <strong>${title}</strong> ${message}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            `
+        <div class="alert alert-${className} alert-dismissible fade show" role="alert">
+        <strong>${title}</strong> ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        `
 
 
         function formHandler(e) {
@@ -64,8 +68,7 @@
                 //Hata mesajını gösterir
                 alertDOM.innerHTML = alertFunction(
                     "Error",
-                    "Entered incomplete information",
-                    "success"
+                    "Entered incomplete information"
                 )
             }
         }

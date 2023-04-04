@@ -30,7 +30,7 @@
                     <div id="list">
                         <ul class="list-group"></ul>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
@@ -39,16 +39,16 @@
     <script>
         let userFormDom = document.querySelector('#userForm')
         userFormDom.addEventListener('submit', formHandler)
-        const alertDOM=document.querySelector('#alert')
+        const alertDOM = document.querySelector('#alert')
 
         // alert fonksiyonu parametreler ile oluşturuldu
-        const alertFunction= (title,message,className="warning") =>`
+        const alertFunction = (title, message, className = "warning") => `
             <div class="alert alert-${className} alert-dismissible fade show" role="alert">
             <strong>${title}</strong> ${message}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             `
-        
+
 
         function formHandler(e) {
             e.preventDefault(); //ile submit anında sayfanın yenilenmesini engelliyoruz
@@ -61,30 +61,27 @@
                 SCORE.value = ''
             }
             else {
-                alertDOM.innerHTML=alertFunction(
+                //Hata mesajını gösterir
+                alertDOM.innerHTML = alertFunction(
                     "Error",
                     "Entered incomplete information",
                     "success"
                 )
-                
             }
-
         }
 
         let userlistDOM = document.querySelector('#list') //list divini seçtik
         const addItem = (username, score) => {
             let NewLi = document.createElement('li') // yeni bir list elemanı oluşturuyoruz
             NewLi.innerHTML = `
-               ${username}
-                <span class="badge bg-primary rounded-pill">${score}</span>
-            `
+                ${username}
+                    <span class="badge bg-primary rounded-pill">${score}</span>
+                `
             NewLi.classList.add(
                 'list-group-item', 'd-flex', 'justify-content-between', 'align-items-center'
             );
             userlistDOM.append(NewLi); // ul ye liste elemanını ekliyoruz
         }
-
-
 
     </script>
 </body>

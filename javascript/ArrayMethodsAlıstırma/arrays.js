@@ -1,20 +1,20 @@
 //1.SORU
 //let dizi = [2,5,8,11,15,17];
 
-let newl=dizi.filter((x)=>x>10).map((y)=>y*5)
+let newl = dizi.filter((x) => x > 10).map((y) => y * 5)
 console.log(newl);
 
 /************************/
 
 //2.SORU
 //let dizi = [3,6,9,14,16];
-function myFunction (dizi){
- 
-    dizi.some((x)=>x>5)? console.log("Beşten büyük bir eleman mevcut."): console.log("5'ten büyük eleman mevcut değil." );
-    }
-      
-    myFunction(dizi);
-    
+function myFunction(dizi) {
+
+    dizi.some((x) => x > 5) ? console.log("Beşten büyük bir eleman mevcut.") : console.log("5'ten büyük eleman mevcut değil.");
+}
+
+myFunction(dizi);
+
 
 /************************/
 

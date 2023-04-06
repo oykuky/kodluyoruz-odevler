@@ -8,24 +8,19 @@ console.log(newl);
 
 //2.SORU
 //let dizi = [3,6,9,14,16];
-function myFunction(dizi) {
-
-    if (dizi.some((x) => x > 5)) {
-        console.log('var')
+function myFunction (dizi){
+ 
+    dizi.some((x)=>x>5)? console.log("Beşten büyük bir eleman mevcut."): console.log("5'ten büyük eleman mevcut değil." );
     }
-
-    else {
-        console.log('yok')
-    }
-}
-myFunction(dizi);
+      
+    myFunction(dizi);
+    
 
 /************************/
 
 
 //3.SORU
 //let dizi = [2,3,4];
-
 // Uygun dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) veren bir fonksiyon yazınız.
 
 function carpimYap(ac, sayi) {

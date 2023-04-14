@@ -3,11 +3,9 @@ function newElement() {
     var liDom = document.createElement('li')  //yeni bir liste elemanı oluşturduk
     var UlDom = document.querySelector('#list') //liste etiketini seçtik
     var task = document.querySelector('#task') //input verilerimizi alacağımız ogeyi seçtik
-    var toastDom = document.querySelector('#liveToast')
 
     if (task.value.length === 0 || task.value === "") {
-        
-
+        $('.error').toast('show');   //burada index dosyamızdaki Toast bölümündeki error class seçilir
     }
     else {
 
@@ -27,7 +25,3 @@ function remove() {
 
 }
 
-
-function GetToast(){
-    
-}

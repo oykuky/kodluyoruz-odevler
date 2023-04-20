@@ -10,7 +10,7 @@ function liClicked(){
 function newElement() {
    
    
-    if (task.value.length === 0 || task.value === "") {
+    if (task.value.trim() == "" ) {
         $('.error').toast('show');   //burada index dosyamızdaki Toast bölümündeki error class seçilir
     }
     else {
@@ -29,6 +29,7 @@ function newElement() {
 
 
 function remove(parentNode) {
+    
     
 }
 

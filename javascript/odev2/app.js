@@ -29,7 +29,7 @@ function newElement() {
 
 
 function remove(parentNode) {
-    
+    parentNode.remove();
     
 }
 

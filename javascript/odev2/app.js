@@ -1,6 +1,6 @@
 const kapat = `<span class="close" onclick="deleteItem(event)" aria-label="Close" aria-hidden="true">&times;</span>`;
-var UlDom = document.querySelector('#list') //liste etiketini seçtik
-var task = document.querySelector('#task') //input verilerimizi alacağımız ogeyi seçtik
+var UlDom = document.querySelector('#list') //liste etiketini seçilir
+var task = document.querySelector('#task') //input verilerimizi alacağımız ogeyi seçilir
 let listItems = [];
 
 // localStoragedan verileri alma
@@ -12,7 +12,6 @@ if (storedIt) {
         console.error("Geçersiz JSON formatı :", storedIt)
     }
 }
-
 
 //toggle ile sınıfa geçiş yapma
 function liClicked() {
@@ -45,9 +44,6 @@ function deleteItem(event) {
     console.log(listItems)
 
 }
-
-
-
 //event.target nesnesi olayın tetiklendiği HTML ögesidir. Olayın hedef ögesidir
 
 

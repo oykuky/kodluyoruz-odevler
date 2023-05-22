@@ -81,3 +81,17 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+const btnContainer = document.querySelector(".btn-container");
+const section = document.querySelector(".section-center");
+
+//Kategorileri listeleme
+const reducer = function (v , item){
+  if (!v.includes(item.category))
+      v.push(item.category);
+    return v ;
+}
+let reducedCategory = menu.reduce ( reducer , ['ALL']  )
+
+console.log(reducedCategory);
+

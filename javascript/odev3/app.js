@@ -86,12 +86,24 @@ const btnContainer = document.querySelector(".btn-container");
 const section = document.querySelector(".section-center");
 
 //Kategorileri listeleme
-const reducer = function (v , item){
-  if (!v.includes(item.category))
-      v.push(item.category);
-    return v ;
+const reducer = function (arr , item){
+  if (!arr.includes(item.category))
+      arr.push(item.category);
+      console.log("item " , item);
+    return arr ;
 }
 let reducedCategory = menu.reduce ( reducer , ['ALL']  )
 
-console.log(reducedCategory);
+function List () {
 
+  // Butonları oluşturma
+  // data-id ile kategoriye benzersiz kimlik atanır ve daha kolay erişilip filtreleme yapılabilir
+  const btns = reducedCategory.map(function(category){
+    return `<button class="btn btn-outline-dark btn-item" data-id=${category} > ${category} </button>`;
+    }).join('');
+  btnContainer.innerHTML = btns;
+
+  
+}
+
+  List();

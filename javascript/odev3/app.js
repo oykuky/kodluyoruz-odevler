@@ -23,7 +23,7 @@ const menu = [
     category: "Korea",
     price: 8.99,
     img:
-    "./img/bibimbap.jpg",
+      "./img/bibimbap.jpg",
     desc: `Boiling vegetables, serving with special hot sauce`,
   },
   {
@@ -32,7 +32,7 @@ const menu = [
     category: "China",
     price: 5.99,
     img:
-    "./img/Dan-Dan-Noodles-10.jpg",
+      "./img/Dan-Dan-Noodles-10.jpg",
     desc: `Dan dan noodle, serving with green onion `,
   },
   {
@@ -41,7 +41,7 @@ const menu = [
     category: "China",
     price: 12.99,
     img:
-    "./img/Yangzhou-Fried-Rice1.jpg",
+      "./img/Yangzhou-Fried-Rice1.jpg",
     desc: `Yangzhou style fried rice, serving with bean and pickles `,
   },
   {
@@ -86,43 +86,42 @@ const btnContainer = document.querySelector(".btn-container");
 const section = document.querySelector(".section-center");
 
 //Kategorileri listeleme
-const reducer = function (arr , item){
+const reducer = function (arr, item) {
   if (!arr.includes(item.category))
-      arr.push(item.category);
-      console.log("item " , item);
-    return arr ;
+    arr.push(item.category);
+  return arr;
 }
-let reducedCategory = menu.reduce ( reducer , ['ALL']  )
+let reducedCategory = menu.reduce(reducer, ['ALL'])
 
-function List () {
+function List() {
 
   // Butonları oluşturma
   // data-id ile kategoriye benzersiz kimlik atanır ve daha kolay erişilip filtreleme yapılabilir
-  const btns = reducedCategory.map(function(category){
+  const btns = reducedCategory.map(function (category) {
     return `<button class="btn btn-outline-dark btn-item" data-id=${category} > ${category} </button>`;
-    }).join('');
-  btnContainer.innerHTML = btns; 
+  }).join('');
+  btnContainer.innerHTML = btns;
 
   //menü filtreleme
   const btnsF = document.querySelectorAll('.btn-item');
   btnsF.forEach(function (itmBtn) {
-    itmBtn.addEventListener("click", function (e){
-      const category = e.target.dataset.id; // seçilen kategori
+    itmBtn.addEventListener("click", function (e) {
+      const category = e.target.dataset.id; // seçilen kategori butonun data-id karakteri alınır
       const filteredMenu = menu.filter((item) => {
         return category === "ALL" || item.category === category;
       });
       menuList(filteredMenu);
-      
+
     })
-  } )
+  })
 }
 
 
- const menuList = (category) => {
-  section.innerHTML = "";
+const menuList = (category) => {
+  section.innerHTML = ""; //section içeriğini önce temizle
   category.forEach((food) => {
     const foodDiv = document.createElement('div');
-    foodDiv.classList.add('menu-items', 'col-lg-6' ,'col-sm-12')
+    foodDiv.classList.add('menu-items', 'col-lg-6', 'col-sm-12')
     foodDiv.innerHTML = `
     <img src =${food.img} class = "photo">
     <div class = "menu-info">
@@ -135,10 +134,9 @@ function List () {
 
     `;
     section.appendChild(foodDiv);
-    
+
   });
- };
+};
 
 
 List();
- 

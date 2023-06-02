@@ -101,9 +101,44 @@ function List () {
   const btns = reducedCategory.map(function(category){
     return `<button class="btn btn-outline-dark btn-item" data-id=${category} > ${category} </button>`;
     }).join('');
-  btnContainer.innerHTML = btns;
+  btnContainer.innerHTML = btns; 
 
-  
+  //menü filtreleme
+  const btnsF = document.querySelectorAll('.btn-item');
+  btnsF.forEach(function (itmBtn) {
+    itmBtn.addEventListener("click", function (e){
+      const category = e.target.dataset.id; // seçilen kategori
+      const filteredMenu = menu.filter((item) => {
+        return category === "ALL" || item.category === category;
+      });
+      menuList(filteredMenu);
+      
+    })
+  } )
 }
 
-  List();
+
+ const menuList = (category) => {
+  section.innerHTML = "";
+  category.forEach((food) => {
+    const foodDiv = document.createElement('div');
+    foodDiv.classList.add('menu-items', 'col-lg-6' ,'col-sm-12')
+    foodDiv.innerHTML = `
+    <img src =${food.img} class = "photo">
+    <div class = "menu-info">
+      <div class = "menu-title"
+        <h4>${food.title}</h4>
+        <h4>${food.price}</h4>
+      </div>
+        <p class = "menu-text">${food.desc}</p>
+    </div>
+
+    `;
+    section.appendChild(foodDiv);
+    
+  });
+ };
+
+
+List();
+ 
